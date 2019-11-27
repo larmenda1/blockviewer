@@ -1,0 +1,77 @@
+/*
+* BlockViewer V0.0.1
+* Copyright 2019, Luis Armendariz
+*/
+
+html, body {
+    height: 100%;
+}
+body {
+    background: none 0px 0px repeat scroll rgb(211, 211, 211);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+div {
+    height: auto;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+div.main-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 17px;
+}
+
+
+table.block-list {
+    width: 100%;
+}
+table.block-list tr.block-row:hover {
+    cursor: pointer;
+    background: none 0px 0px repeat scroll rgb(220, 220, 220); /* gainsboro */
+}
+table.block-list tr.block-row .block-cell {
+    margin: 0;
+    padding: 0;
+}
+table.block-list tr.block-row .block-cell .block-details-table {
+    margin: 0;
+    padding: 0;
+}
+table.block-list tr.block-row .block-cell .block-details-table .block-json {}
+table.block-list tr.block-row-json {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+table.block-list tr.block-row-json td.cell-json {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+table.block-list tr.block-row-json td.cell-json .div-json {
+    height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 0;
+    max-height: 300px;
+}
+table.block-list tr.block-row-json td.cell-json .div-json pre {
+    float: left;
+    height: inherit;
+    margin: 0;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+}
+table.block-list tr.block-row-empty {}
+
+.block-json-list {
+    display: none;
+}
+.block-json-list .block-json {
+    display: none;
+}

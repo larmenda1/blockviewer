@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- primary -->
+    <meta charset="utf-8" />
+    <title>Block Viewer</title>
+    <meta name="description" content="home page">
+    <meta name="author" content="Luis Armendariz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/blockviewer.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a class="page-reload" href="#">LOAD <i class="page-reload-icon fas fa-sync"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="main-area">
+        <table class="block-list">
+            <thead>
+                <tr>
+                    <th>Block ID</th>
+                    <th>Timestamp</th>
+                    <th>Total Transactions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="block-json-list"></div>
+    </div>
+
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/eosjs/eosjs-api.js" type="text/javascript"></script>
+    <script src="js/eosjs/eosjs-jsonrpc.js" type="text/javascript"></script>
+    <script src="js/eosjs/eosjs-jssig.js" type="text/javascript"></script>
+    <script src="js/eosjs/eosjs-numeric.js" type="text/javascript"></script>
+    <script src="js/blockviewer.js" type="text/javascript"></script>
+</body>
+</html>
